@@ -46,7 +46,7 @@ Beyond detection and forecasting, the notebook extracts several quantities direc
 - **Neupert Conformity Index (NCI)** — a 0–1 score of how cleanly a flare's impulsive phase follows the Neupert effect. It rises with class (X 0.95, M 0.88, C 0.77); low-NCI gradual flares are, following Veronig et al. (2002), candidate eruptive events.
 - **Quasi-periodic pulsations (QPP)** — detected via Lomb-Scargle with a red-noise significance test (>4σ) in two physical period bands (~11 s fast, ~103 s slow). Detected in **~60%** of flares, most strongly in X-class.
 - **Temperature and emission measure** — isothermal fits to the 340-channel SoLEXS spectra give T(t) and EM(t), with the T–EM phase diagram tracing the flare's thermal evolution (15.6–58 MK range).
-- **Iron 6.40 keV fluorescence** — an experimental disk-position proxy from the reflected Fe Kα line, recovered from disk-integrated spectra without imaging.
+- **Fe XXV line (6.7 keV)** — resolved in the strongest X-class flares (centroid 6.70 keV), independently confirming the >15 MK plasma temperatures from the T/EM fits; the 6.40 keV fluorescence component is not separable at SoLEXS resolution.
 
 ## What's in this repository
 
