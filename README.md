@@ -6,7 +6,7 @@ Team Kalam · Bharatiya Antariksh Hackathon (BAH) 2026 · Problem Statement 15
 
 ---
 
-FlareSentinel-L1 detects solar flares in Aditya-L1's X-ray payloads, builds a validated flare catalogue, and forecasts flare onset and eventual class from the early rise phase. It is built on the physical coupling between the two payloads — the Neupert effect, where the hard X-ray impulsive phase precedes the soft X-ray thermal peak — and uses that lead as the basis for early warning.
+FlareSentinel-L1 detects solar flares in Aditya-L1's X-ray payloads, builds a validated flare catalogue, and forecasts flare onset and eventual class from the early rise phase. It is built on the physical coupling between the two payloads the Neupert effect, where the hard X-ray impulsive phase precedes the soft X-ray thermal peak and uses that lead as the basis for early warning.
 
 Everything here runs on real data: 37 days of SoLEXS and 38 days of HEL1OS Level-1 observations from PRADAN/ISSDC, spanning **2 October – 10 November 2024**, during the maximum of Solar Cycle 25. No synthetic data is used at any stage.
 
@@ -14,7 +14,7 @@ Everything here runs on real data: 37 days of SoLEXS and 38 days of HEL1OS Level
 
 The pipeline moves from raw telemetry to an operator-facing forecast in five stages:
 
-**Detection.** A two-tier detector runs on calibrated SoLEXS flux — a sensitive statistical tier for weak C-class events and a physics-informed tier (threshold plus impulsive-onset derivative) for M/X events. It produces a 309-flare catalogue with Start/Peak/Stop times and a GOES class for each event, independently reproduced from the data.
+**Detection.** A two-tier detector runs on calibrated SoLEXS flux a sensitive statistical tier for weak C-class events and a physics-informed tier (threshold plus impulsive-onset derivative) for M/X events. It produces a 309-flare catalogue with Start/Peak/Stop times and a GOES class for each event, independently reproduced from the data.
 
 **Validation.** Detections are cross-checked against the NOAA/GOES flare event list. The detector recovers **100% of X-class (20/20)** and **98% of M-class (45/46)** events, with **100% class agreement** on matched events and a peak-time agreement of **−0.27 ± 0.90 min**.
 
@@ -22,7 +22,7 @@ The pipeline moves from raw telemetry to an operator-facing forecast in five sta
 
 **Forecasting.** A three-head XGBoost model, trained on 44 causal physics features with a strictly chronological train/test split, predicts flare onset within a 15-minute horizon, the eventual class, and the time-to-peak. Probabilities are isotonically calibrated.
 
-**Escalation.** A separate classifier answers the operational question — *will a flare that has just started grow to M or X?* — using only the first five minutes of the rise.
+**Escalation.** A separate classifier answers the operational question *will a flare that has just started grow to M or X?* using only the first five minutes of the rise.
 
 ## Key results
 
