@@ -59,6 +59,8 @@ An operations dashboard (multi-page Streamlit app reading these catalogues — l
 
 SoLEXS (SDD2, 2–22 keV, 1 s cadence, 340 channels) and HEL1OS (CdTe, 8–70 keV, 20 s cadence) Level-1 products from PRADAN/ISSDC, 2 Oct – 10 Nov 2024. The notebook expects the day-wise archives in a Drive folder; paths are set at the top of the loading cells.
 
+HEL1OS instrument details: Nandi et al. 2025, *Solar Physics* 300, 140 ([doi:10.1007/s11207-025-02543-8](https://doi.org/10.1007/s11207-025-02543-8)).
+
 ## Method notes and limitations
 
 Stated plainly, because they matter for reading the results:
