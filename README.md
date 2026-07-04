@@ -67,7 +67,7 @@ Stated plainly, because they matter for reading the results:
 - **The GOES reference list** is transcribed from NOAA SWPC event reports and covers M-class and above; Colab has no outbound network during processing. C-class detections therefore appear as "extra" against this list rather than as errors.
 - **HEL1OS** does not extend the lead time beyond the SoLEXS derivative proxy in this dataset. Its value is independent confirmation (lower false-alarm rate) and the non-thermal energy band, and it is reported as such.
 - **Training spans solar maximum only.** The model has not seen solar-minimum conditions; operational use would require multi-cycle training, adaptive baselines, and periodic recalibration. The architecture is designed to support this.
-- The **T/EM** fit is isothermal on a multi-thermal disk-integrated spectrum, and the **Fe fluorescence** proxy is SNR-limited to a small sample — both are treated as indicative, not definitive.
+- The **T/EM** fit is isothermal on a multi-thermal disk-integrated spectrum, and the **Fe fluorescence** proxy is SNR-limited to a small sample both are treated as indicative, not definitive.
 
 ## Running it
 
